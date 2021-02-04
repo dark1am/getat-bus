@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import SelectBus from './components/SelectBus';
+import Autobus from './img/autobus.svg';
+import LivePost from './components/LivePost';
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={Autobus} alt=""/>
+      <hr/>
+      <h1>GETAT.BUS</h1>
+      <hr/>
+
+      <Router>
+
+        <Switch>
+
+          <Route path="/home">
+            <SelectBus />
+          </Route>
+
+          <Route path="/search">
+            <SelectBus />
+            <LivePost />
+          </Route>
+
+        </Switch> 
+      </Router>
+      
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.liveChat{
+    border:1px black solid;
+    display:flex;
+    align-items: center;
+}
+.liveChat input{
+    outline:none;
+    border: none;
+    background: none;
+}
+
+.liveCHat__button{
+    outline: none;
+    border:none;
+}

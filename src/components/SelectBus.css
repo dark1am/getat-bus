@@ -1,0 +1,24 @@
+.selectBus{
+    padding:30px;
+}
+.submitBus{
+    border:1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    transition:1s;
+}
+.submitBus input,
+.submitBus select{
+    border: none;
+    outline: none;
+    background:transparent;
+}
+
+.submitBus input:hover{
+    cursor: pointer;
+}
+.submitBus:hover{
+    background: #ff4747;
+}
